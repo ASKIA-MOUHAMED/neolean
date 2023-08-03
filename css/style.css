@@ -32,6 +32,21 @@
       stroke-dashoffset: 0;
   }
 }
+   /* CSS pour l'effet de pulsation du bouton */
+   @keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+.btnneoleanacademy{
+  color: white;
+    background-color: #1D4E9C;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    border: none;
+    padding: 8px 20px;
+    animation: pulsate 2s infinite;
+}
 /* ---------animation tete neolean END css--------*/
 .timeline {
     position: relative;
@@ -187,6 +202,9 @@
       font-size: 16px;
       width: 50%;
       display: block;
+    }
+    .btnneoleanacademy{
+      font-size: .6rem;
     }
   }
   @media (min-width: 1200px) {
