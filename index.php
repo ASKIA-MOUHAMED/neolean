@@ -77,7 +77,7 @@
             <div class="container">
 
                 <a href="https://neolean.digital" class="navbar-brand"><img src="images/fond noir Nouveau logo neolean.png" alt="" width="100" height="100"></a>
-                <a href="neoleanacademy.html" class=" btnneoleanacademy ms-4 d-md-none">NEOLEAN ACADEMY</a>
+                <a href="neoleanacademy.php" class=" btnneoleanacademy ms-4 d-md-none">NEOLEAN ACADEMY</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -92,9 +92,7 @@
                             <a class="nav-link click-scroll" href="#section_2"><small class="small-title"><strong class="text-warning"></strong></small> NOS SOLUTIONS</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3"><small class="small-title"><strong class="text-warning"></strong></small> A VENIR</a>
-                        </li>
+                        
 
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_4"><small class="small-title"><strong class="text-warning"></strong></small> NOS PARTENAIRES</a>
@@ -104,7 +102,7 @@
                             <a class="nav-link click-scroll" href="#section_5"><small class="small-title"><strong class="text-warning"></strong></small> Contact</a>
                         </li>
                     </ul>
-                    <a href="neoleanacademy.html" class=" btnneoleanacademy ms-4 d-none d-md-block">NEOLEAN ACADEMY</a>
+                    <a href="neoleanacademy.php" class=" btnneoleanacademy ms-4 d-none d-md-block">NEOLEAN ACADEMY</a>
                 <div>
                         
             </div>
