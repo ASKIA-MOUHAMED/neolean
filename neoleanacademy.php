@@ -44,7 +44,7 @@
     <nav class="navbar navbar-expand-lg bg-white shadow-lg">
         <div class="container">
 
-            <a href="neoleanacademy.html" class="navbar-brand"><img src="images/neoleanacademy.svg" alt="" width="150" height="90"></a>
+            <a href="neoleanacademy.php" class="navbar-brand"><img src="images/neoleanacademy.svg" alt="" width="150" height="90"></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
