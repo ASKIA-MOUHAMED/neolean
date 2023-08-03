@@ -251,6 +251,102 @@
         color: #1D4E9C;
     }
 }
+body {font-family: Arial, Helvetica, sans-serif;}
+            
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000000000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #FBC25A;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.titre{
+    color: #1D4E9C;
+    font-family: 'Montserrat Bold';
+}
+.btntelechargerplaquette{
+    color: white;
+    background-color: #1D4E9C;
+    border: none;
+    font-size: 0.6rem;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-family: 'Montserrat Bold';
+  
+}
+.icone{
+    animation: pulsate 2s infinite;
+}
+.partie1{
+    font-family: 'Montserrat Bold';
+}
+.partie2{
+    font-family: 'Montserrat Regular';
+    color: #000000;
+    font-size: 13px;
+    line-height: 25px;
+    
+    
+}
+.partie3{
+    list-style-type: none;
+    line-height: 25px;
+
+}
+.liste{
+    font-family: 'Montserrat SemiBold';
+    color: #1D4E9C;
+    font-size: 13px;
+   
+}
+
+  .form-control{
+    border: none;
+    border-radius: 20px;
+    background-color: #F0F3F7;
+    font-size: 12px;
+    font-family: 'Montserrat Regular';
+    
+    
+
+}
+.form-control::placeholder, select.form-control option[value=""] {
+    color: #757575; 
+    font-size: 12px;
+    font-family: 'Montserrat Regular';
+}
 @media(max-width: 992px){
     .section2{
         height: 56vh;
@@ -270,5 +366,8 @@
         .localisation{
             margin-top: 10px;
         }
+    }
+    .partie1{
+       font-size: 15px;
     }
   }
