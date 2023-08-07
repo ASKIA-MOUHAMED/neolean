@@ -36,6 +36,22 @@
             .style1{
                 font-family: 'Montserrat SemiBold';
             }
+            /* .limites {
+    position: relative;
+    display: inline-block;
+    z-index:1;
+}
+
+.limites::after {
+    content: '';
+    position: absolute;
+    bottom: 2px; 
+    left: 0;
+    right: 0; 
+    padding-bottom: 10px; 
+    background-color: #1D4E9C;
+    z-index: 0;
+} */
         </style>
         
     </head>
@@ -77,7 +93,7 @@
      <div class="section2" id="section_1">
         <div class="container">
             <h6 class="text1">BIENVENUE À L'ÉCOLE SUPÉRIEURE QUI REPOUSSE <br>
-            LES LIMITES DE LA FORMATION INNOVANTE !</h6>
+            <span class="limites">LES LIMITES DE LA FORMATION INNOVANTE !</span></h6>
           <h2 class="text2">
             NEOLEAN ACADEMY<br />
           </h2>
@@ -94,12 +110,10 @@
                      
                  </div>
                  <div>
-                    <h6 class="sect3text2">Rejoignez Neolean Academy, et faites partie d'une communauté ambitieuse </h6>
+                    <h6 class="sect3text2">Rejoignez Neolean Academy, et faites partie d'une communauté ambitieuse</h6>
                     <h6 class="sect3text2"> et engagée. </h6>
                  </div>
-                 <!-- <div>
-                    <button class="mt-2 btnvoirplus">Voir Plus</button>
-                 </div> -->
+                
                 </div>
                 <div class="col-md-6">
                   <div class="card">
@@ -136,9 +150,9 @@
                        <h6 class="sect3text2">Rejoignez Neolean Academy, et faites partie d'une communauté ambitieuse </h6>
                        <h6 class="sect3text2"> et engagée. </h6>
                     </div>
-                    <!-- <div>
+                    <div>
                        <button class="mt-2 btnvoirplus">Voir Plus</button>
-                    </div> -->
+                    </div>
                    </div>
               </div>
         </div>
@@ -150,12 +164,12 @@
          <div class="container pb-5">
             <div class="row d-flex">
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <div class="card" id="myBtn" onclick="openModal(1)">
+                    <div class="card" id="myBtn" onmouseover="delayedOpenModal(1)">
                         <div class="card-content">
-                            <img src="images/ia.svg" alt="Newsletter Image" class="bordurebas">
+                            <img src="images/ia.jpeg" alt="Newsletter Image" class="bordurebas">
                         </div>
                         <h3 class="text-center titre1">Mastère Intelligence Artificielle</h3>
-                        <!-- <h5 class="text-center titre2">Lorem ipsum dolor sit amet consuibusdam, cupiditate!</h5> -->
+                        
                         <div class="d-flex justify-content-center">
                             <button class="btnvoirplus mt-3">Voir Plus</button>
                         </div>
@@ -163,12 +177,12 @@
                 </div>
             
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <div class="card formobile" id="myBtn2" onclick="openModal(2)">
+                    <div class="card formobile" id="myBtn2" onmouseover="delayedOpenModal(2)">
                         <div class="card-content">
                             <img src="images/dataengineer.png" alt="Newsletter Image" class="bordurebas">
                         </div>
                         <h3 class="text-center titre1">Mastère Data Engineer</h3>
-                        <!-- <h5 class="text-center titre2">Lorem ipsum dolor sit amet consuibusdam, cupiditate!</h5> -->
+                       
                         <div class="d-flex justify-content-center">
                             <button class="btnvoirplus mt-3">Voir Plus</button>
                         </div>
@@ -176,7 +190,7 @@
                 </div>
             
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <div class="card formobile" id="myBtn3" onclick="openModal(3)">
+                    <div class="card formobile" id="myBtn3"onmouseover="delayedOpenModal(3)">
                         <div class="card-content">
                             <img src="images/dataanalyst.png" alt="Newsletter Image" class="bordurebas">
                         </div>
@@ -264,33 +278,34 @@
       </div>
       
  <!-- Intelligence Artificielle -->
-<div id="myModal" class="modal">
+ <div id="myModal1" class="modal">
     <div class="modal-content">
-        <!-- <span class="close" onclick="closeModal()">&times;</span> -->
+        <span class="close" onclick="closeModal()">&times;</span>
         <div class="row d-flex align-items-center py-3 px-2">
             <div class="col-md-8">
                 <h3 class="partie1">Vous souhaitez vous former, être certifié(e) <br>
                     et opérationnel(le) en tant que Concepteur en Intelligence Artificielle ?</h3>
-                
-                <h5 class="partie2">Nous sommes là pour proposer à nos entreprises partenaires des talents comme <br>
-                    les vôtres ! Pour intégrer le Mastère <span class="style1">Intelligence Artificielle</span>, vous êtes aujourd’hui :</h5>
+                <h5 class="partie2">Vous avez une formation et/ou une expérience métier ?</h5>
+                <h5 class="partie2">Vous souhaitez vous former et être certifié(e) sur les technologies Java ? Et développer vos compétences de Scrum Master ?</h5>
+                <h5 class="partie2">Nous sommes là pour proposer à nos entreprises partenaires des talents comme 
+                    les vôtres ! <br>Pour intégrer <span class="style1">le Mastère Concepteur en Intelligence Artiificielle</span>, vous êtes aujourd’hui :</h5>
                     
                 <ul class="partie3">
                     <li class="liste d-flex">
                         <div><img src="images/liste.svg" alt="" class="me-1"> </div>
-                        <div>Titulaire d’un diplôme Bac+3 validé (minimum) en école d’informatique</div>
+                        <div>Titulaire d’un diplôme Bac+3 validé (minimum), en informatique ou filière scientifique.</div>
                     </li>
                     <li class="liste d-flex">
                         <div><img src="images/liste.svg" alt="" class="me-1"> </div>
-                        <div>Rigoureux, créatif, vous avez un sens aigu du service client</div>
+                        <div>Rigoureux, créatif, vous avez un sens aigu de la qualité et des valeurs techniques</div>
                     </li>
                     <li class="liste d-flex">
                         <div><img src="images/liste.svg" alt="" class="me-1"> </div>
-                        <div>Vous êtes mobile, dynamique et capable de vous adapter rapidement</div>
+                        <div>Vous avez un bon niveau d’Anglais</div>
                     </li>
                     <li class="liste d-flex">
                         <div><img src="images/liste.svg" alt="" class="me-1"> </div>
-                        <div>Vous avez des compétences dans le domaine de l’analyse de données<br>(R, Matlab…), la modélisation de données.</div>
+                        <div>Détenteur d’une première expérience en développement Java ou autre langage objet de référence est indispensable</div>
                     </li>
                    
                 </ul>
@@ -300,12 +315,13 @@
                     professionnelles s’adresse à des étudiants et
                     jeunes diplômés.</h5>
                 
-                <div>
-                    <form action="">
-                        <input type="text" name="email" placeholder="Saisir votre e-mail" class="form-control">
-                        <button class="btntelechargerplaquette mt-3"><i class="fa-solid fa-file-pdf icone"></i> Télécharger la plaquette</button>
-                    </form>
-                </div>
+                <!-- HTML -->
+            <button class="btntelechargerplaquette" id="btnTelecharger" onclick="openModalPlaquette(1)"><i class="fa-solid fa-file-pdf icone"></i> Télécharger la plaquette</button>
+            <!-- <form action="plaquettedownload.php" id="formTelecharger" style="display: none;">
+            <input type="text" name="email" id="emailField" placeholder="Saisir votre e-mail" class="form-control">
+            <button class="btntelechargerplaquette mt-2" id="btnValider"><i class="fa-solid fa-file-pdf icone"></i> Valider</button>
+            </form> -->
+
             </div>
         </div>
         
@@ -316,14 +332,14 @@
 <!-- Data Engineer -->
 <div id="myModal2" class="modal">
     <div class="modal-content">
-        <!-- <span class="close" onclick="closeModal2()">&times;</span> -->
+        <span class="close" onclick="closeModal2()">&times;</span>
         <div class="row d-flex align-items-center py-3 px-2">
             <div class="col-md-8">
                 <h3 class="partie1">Vous souhaitez vous former, être certifié(e) <br>
                     et opérationnel(le) en tant que Data Engineer ?</h3>
                 
-                <h5 class="partie2">Nous sommes là pour proposer à nos entreprises partenaires des talents comme <br>
-                    les vôtres ! Pour intégrer le Mastère <span class="style1">Data Engineer</span>, vous êtes aujourd’hui :</h5>
+                <h5 class="partie2">Nous sommes là pour proposer à nos entreprises partenaires des talents comme
+                    les vôtres ! <br>Pour intégrer <span class="style1">le Mastère Data Engineer</span>, vous êtes aujourd’hui :</h5>
                     
                     <ul class="partie3">
                         <li class="liste d-flex">
@@ -340,7 +356,7 @@
                         </li>
                         <li class="liste d-flex">
                             <div><img src="images/liste.svg" alt="" class="me-1"> </div>
-                            <div>Vous avez des compétences dans le domaine de l’analyse de données<br>(R, Matlab…), la modélisation de données.</div>
+                            <div>Vous avez des compétences dans le domaine de l’analyse de données<br>(R, Matlab…), la modélisation et/ou le développement (Java, Python, C++, Java Script, HTML...)</div>
                         </li>
                        
                     </ul>
@@ -350,12 +366,11 @@
                     professionnelles s’adresse à des étudiants et
                     jeunes diplômés.</h5>
                 
-                <div>
-                    <form action="">
-                        <input type="text" name="email" placeholder="Saisir votre e-mail" class="form-control">
-                        <button class="btntelechargerplaquette mt-3"><i class="fa-solid fa-file-pdf icone"></i> Télécharger la plaquette</button>
-                    </form>
-                </div>
+                    <button class="btntelechargerplaquette" id="btnTelecharger2" onclick="openModalPlaquette(2)"><i class="fa-solid fa-file-pdf icone"></i> Télécharger la plaquette</button>
+                <!-- <form action="" id="formTelecharger2" style="display: none;">
+                <input type="text" name="email" placeholder="Saisir votre e-mail" class="form-control">
+                <button class="btntelechargerplaquette mt-2" id="btnValider2"><i class="fa-solid fa-file-pdf icone"></i> Valider</button>
+                </form> -->
             </div>
         </div>
       
@@ -365,15 +380,15 @@
 <!-- Data Analyst -->
 <div id="myModal3" class="modal">
     <div class="modal-content">
-        <!-- <span class="close" onclick="closeModal3()">&times;</span> -->
+        <span class="close" onclick="closeModal3()">&times;</span>
         
             <div class="row d-flex align-items-center py-3 px-2">
                 <div class="col-md-8">
                     <h3 class="partie1">Vous souhaitez vous former, être certifié(e) <br>
                         et opérationnel(le) en tant que Data Analyst ?</h3>
                     
-                    <h5 class="partie2">Nous sommes là pour proposer à nos entreprises partenaires des talents comme <br>
-                        les vôtres ! Pour intégrer le Mastère <span class="style1">Data Analyst</span>, vous êtes aujourd’hui :</h5>
+                    <h5 class="partie2">Nous sommes là pour proposer à nos entreprises partenaires des talents comme 
+                        les vôtres !<br> Pour intégrer <span class="style1">le Mastère Data Analyst</span>, vous êtes aujourd’hui :</h5>
                         
                         <ul class="partie3">
                             <li class="liste d-flex">
@@ -400,16 +415,71 @@
                         professionnelles s’adresse à des étudiants et
                         jeunes diplômés.</h5>
                     
-                    <div>
-                        <form action="">
-                            <input type="text" name="email" placeholder="Saisir votre e-mail" class="form-control">
-                            <button class="btntelechargerplaquette mt-3"><i class="fa-solid fa-file-pdf icone"></i> Télécharger la plaquette</button>
-                        </form>
-                    </div>
+                        <button class="btntelechargerplaquette" id="btnTelecharger3" onclick="openModalPlaquette(3)"><i class="fa-solid fa-file-pdf icone"></i> Télécharger la plaquette</button>
+                <!-- <form action="" id="formTelecharger3" style="display: none;">
+                <input type="text" name="email" placeholder="Saisir votre e-mail" class="form-control">
+                <button class="btntelechargerplaquette mt-2" id="btnValider3"><i class="fa-solid fa-file-pdf icone"></i> Valider</button>
+                </form> -->
                 </div>
             </div>  
     </div>
 </div>
+<!-- ---------Download Plaquette IA -------------->
+<div id="modalDownloadplaquetteIA" class="modal2">
+    <div class="modal-content">
+        <span class="close" onclick="closeModalPlaquetteIA()">&times;</span>
+        <div class="row d-flex align-items-center py-3 px-2">
+            <h3 class="text-center pb-4">Plaquette Mastère Concepteur en Intelligence Artiificielle</h3>
+            <div id="message1IA" class="mb-2" style="display:none; color:red;">Veuillez saisir une adresse e-mail valide.</div>
+            <div id="message2IA" class="mb-2" style="display:none; color:red;">Veuillez remplir le champs adresse e-mail.</div>
+            <form action="plaquettedownload.php" id="formTelecharger">
+                <input type="text" name="nom" id="nomField" placeholder="Nom Prénom" class="form-control">
+                <input type="email" name="email" id="emailField" placeholder="e-mail" class="form-control mt-2">
+                <input type="text" name="telephone" id="telephoneField" placeholder="Téléphone" class="form-control mt-2">
+                <button class="btntelechargerplaquette mt-2" id="btnValider"><i class="fa-solid fa-file-pdf icone"></i> Valider</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ---------Download Plaquette Data Engineer -------------->
+<div id="modalDownloadplaquetteDataEngineer" class="modal2">
+    <div class="modal-content">
+        <span class="close" onclick="closeModalPlaquetteDataEngineer()">&times;</span>
+        <div class="row d-flex align-items-center py-3 px-2">
+            <h3 class="text-center pb-4">Plaquette Mastère Data Engineer</h3>
+            <div id="message1DataEngineer" class="mb-2" style="display:none; color:red;">Veuillez saisir une adresse e-mail valide.</div>
+            <div id="message2DataEngineer" class="mb-2" style="display:none; color:red;">Veuillez remplir le champs adresse e-mail.</div>
+            <form action="plaquettedownload.php" id="formTelecharger2">
+                <input type="text" name="nom" id="nomField2" placeholder="Nom Prénom" class="form-control">
+                <input type="email" name="email" id="emailField2" placeholder="e-mail" class="form-control my-2">
+                <input type="text" name="telephone" id="telephoneField" placeholder="Téléphone" class="form-control my-2">
+                <button class="btntelechargerplaquette mt-2" id="btnValider2"><i class="fa-solid fa-file-pdf icone"></i> Valider</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ---------Download Plaquette Data Analyst -------------->
+<div id="modalDownloadplaquetteDataAnalyst" class="modal2">
+    <div class="modal-content">
+        <span class="close" onclick="closeModalPlaquetteDataAnalyst()">&times;</span>
+        <div class="row d-flex align-items-center py-3 px-2">
+            <h3 class="text-center pb-4">Plaquette Mastère Data Analyst</h3>
+            <div id="message1DataAnalyst" class="mb-2" style="display:none; color:red;">Veuillez saisir une adresse e-mail valide.</div>
+            <div id="message2DataAnalyst" class="mb-2" style="display:none; color:red;">Veuillez remplir le champs adresse e-mail.</div>
+            <form action="plaquettedownload.php" id="formTelecharger3">
+                <input type="text" name="nom" id="nomField3" placeholder="Nom Prénom" class="form-control">
+                <input type="email" name="email" id="emailField3" placeholder="e-mail" class="form-control my-2">
+                <input type="text" name="telephone" id="telephoneField" placeholder="Téléphone" class="form-control my-2">
+                <button class="btntelechargerplaquette mt-2" id="btnValider3"><i class="fa-solid fa-file-pdf icone"></i> Valider</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -449,35 +519,46 @@
         });
     </script>
 <script>
-    function openModal(modalNumber) {
-        var modal;
-        if (modalNumber === 1) {
-            modal = document.getElementById("myModal");
-        } else if (modalNumber === 2) {
-            modal = document.getElementById("myModal2");
-        } else if (modalNumber === 3) {
-            modal = document.getElementById("myModal3");
+        var openModalTimeout; // Variable pour stocker le timeout
+
+        function delayedOpenModal(modalNumber) {
+            openModalTimeout = setTimeout(function() {
+                openModal(modalNumber);
+            }, 600); 
         }
-        modal.style.display = "block";
-    }
 
-    function closeModal() {
-        var modal = document.getElementById("myModal");
-        modal.style.display = "none";
-    }
+        function openModal(modalNumber) {
+            var modal = getModalByNumber(modalNumber);
+            modal.style.display = "block";
+            
+        }
+        function getModalByNumber(modalNumber) {
+            if (modalNumber === 1) {
+                return document.getElementById("myModal1");
+            } else if (modalNumber === 2) {
+                return document.getElementById("myModal2");
+            } else if (modalNumber === 3) {
+                return document.getElementById("myModal3");
+            }
+        }
+        function closeModal() {
+            var modal = document.getElementById("myModal1");
+            modal.style.display = "none";
+        }
+        function closeModal2() {
+            var modal = document.getElementById("myModal2");
+            modal.style.display = "none";
+        }
+        function closeModal3() {
+            var modal = document.getElementById("myModal3");
+            modal.style.display = "none";
+        }
 
-    function closeModal2() {
-        var modal = document.getElementById("myModal2");
-        modal.style.display = "none";
-    }
-
-    function closeModal3() {
-        var modal = document.getElementById("myModal3");
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        var modal = document.getElementById("myModal");
+       
+        
+       
+        window.onclick = function(event) {
+        var modal = document.getElementById("myModal1");
         var modal2 = document.getElementById("myModal2");
         var modal3 = document.getElementById("myModal3");
         if (event.target === modal) {
@@ -490,34 +571,113 @@
             modal3.style.display = "none";
         }
     };
-</script>
+    </script>
 <script>
-    // Intercepter la soumission du formulaire avec JavaScript
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Empêcher le rechargement de la page
-        var form = event.target;
+    function openModalPlaquette(modalNumber) {
+        var modal;
+        if (modalNumber === 1) {
+            closeModal(1);
+            modal = document.getElementById("modalDownloadplaquetteIA");
+           
+        } else if (modalNumber === 2) {
+            closeModal(2);
+            modal = document.getElementById("modalDownloadplaquetteDataEngineer");
+        } else if (modalNumber === 3) {
+            closeModal(3);
+            modal = document.getElementById("modalDownloadplaquetteDataAnalyst");
+        }
+        modal.style.display = "block";
+    }
 
-        // Envoyer les données du formulaire à la page PHP via AJAX
-        var xhr = new XMLHttpRequest();
-        xhr.open(form.method, form.action, true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    var response = JSON.parse(xhr.responseText);
-                    var responseMessage = document.getElementById("response-message");
-                    if (response.success) {
-                        responseMessage.textContent = response.message;
-                    } else {
-                        responseMessage.textContent = "Erreur lors du traitement du formulaire.";
-                    }
-                } else {
-                    console.error("Une erreur s'est produite lors de la requête AJAX.");
-                }
+    function closeModalPlaquetteIA() {
+        var modal = document.getElementById("modalDownloadplaquetteIA");
+        modal.style.display = "none";
+    }
+
+    function closeModalPlaquetteDataEngineer() {
+        var modal = document.getElementById("modalDownloadplaquetteDataEngineer");
+        modal.style.display = "none";
+    }
+
+    function closeModalPlaquetteDataAnalyst() {
+        var modal = document.getElementById("modalDownloadplaquetteDataAnalyst");
+        modal.style.display = "none";
+    }
+
+   
+</script>
+
+<script>
+  function handleDownload(btnValiderId, formId, emailFieldId, downloadUrl, modalId, messageDivId, messageDiv2Id) {
+    const btnValider = document.getElementById(btnValiderId);
+    const form = document.getElementById(formId);
+    const emailField = document.getElementById(emailFieldId);
+    const messageDiv = document.getElementById(messageDivId);
+    const messageDiv2 = document.getElementById(messageDiv2Id);
+
+    btnValider.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        // Vérifier si le champ email est rempli
+        const emailValue = emailField.value.trim();
+        if (emailValue === '') {
+            messageDiv2.style.display = "block";
+            setTimeout(function() {
+                messageDiv2.style.display = "none";
+            }, 3000);
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailValue)) {
+            messageDiv.style.display = "block";
+            setTimeout(function() {
+                messageDiv.style.display = "none";
+            }, 3000);
+            return;
+        }
+
+        // Récupérer les données du formulaire
+        const formData = new FormData(form);
+
+        // Envoyer les données au serveur avec fetch
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+        })
+        .then((response) => {
+            // Vérifier si la réponse est OK avant de télécharger le fichier
+            if (response.ok) {
+                return response.blob();
+            } else {
+                throw new Error('Erreur lors du téléchargement du fichier PDF');
             }
-        };
-        xhr.send(new FormData(form));
+        })
+        .then((blob) => {
+            // Créer un lien pour télécharger le fichier PDF
+            const a = document.createElement('a');
+            a.href = downloadUrl;
+            a.download = 'plaque.pdf'; // Nom du fichier PDF à télécharger
+            document.body.appendChild(a);
+            a.click();
+            URL.revokeObjectURL(downloadUrl);
+
+            // Masquer le modal après le téléchargement
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+        })
+        .catch((error) => {
+            console.error(error);
+            alert('Une erreur est survenue lors du téléchargement du fichier PDF.');
+        });
     });
+}
+
+// Appel de la fonction pour chaque formulaire avec l'URL approprié, l'ID du modal et des messages d'erreur spécifiques
+handleDownload('btnValider', 'formTelecharger', 'emailField', 'pdf_files/plaque1.pdf', 'modalDownloadplaquetteIA', 'message1IA', 'message2IA');
+handleDownload('btnValider2', 'formTelecharger2', 'emailField2', 'pdf_files/plaque2.pdf', 'modalDownloadplaquetteDataEngineer', 'message1DataEngineer', 'message2DataEngineer');
+handleDownload('btnValider3', 'formTelecharger3', 'emailField3', 'pdf_files/plaque3.pdf', 'modalDownloadplaquetteDataAnalyst', 'message1DataAnalyst', 'message2DataAnalyst');
+
 </script>
 
 
