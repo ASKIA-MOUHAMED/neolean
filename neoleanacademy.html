@@ -644,9 +644,7 @@
         fetch(form.action, {
             method: 'POST',
             body: formData,
-            headers: {
-            'Content-Type': 'application/x-www-form-urlencoded', // Spécifiez le type de contenu ici
-        },
+            
         })
         .then((response) => {
             // Vérifier si la réponse est OK avant de télécharger le fichier
