@@ -658,7 +658,7 @@
             // Créer un lien pour télécharger le fichier PDF
             const a = document.createElement('a');
             a.href = downloadUrl;
-            a.download = 'plaque.pdf'; // Nom du fichier PDF à télécharger
+            a.download = 'plaquette_formation.pdf'; // Nom du fichier PDF à télécharger
             document.body.appendChild(a);
             a.click();
             URL.revokeObjectURL(downloadUrl);
@@ -675,9 +675,9 @@
 }
 
 // Appel de la fonction pour chaque formulaire avec l'URL approprié, l'ID du modal et des messages d'erreur spécifiques
-handleDownload('btnValider', 'formTelecharger', 'emailField', 'pdf_files/plaque1.pdf', 'modalDownloadplaquetteIA', 'message1IA', 'message2IA');
-handleDownload('btnValider2', 'formTelecharger2', 'emailField2', 'pdf_files/plaque2.pdf', 'modalDownloadplaquetteDataEngineer', 'message1DataEngineer', 'message2DataEngineer');
-handleDownload('btnValider3', 'formTelecharger3', 'emailField3', 'pdf_files/plaque3.pdf', 'modalDownloadplaquetteDataAnalyst', 'message1DataAnalyst', 'message2DataAnalyst');
+handleDownload('btnValider', 'formTelecharger', 'emailField', 'pdf_files/ConcepteurIAFinal.pdf', 'modalDownloadplaquetteIA', 'message1IA', 'message2IA');
+handleDownload('btnValider2', 'formTelecharger2', 'emailField2', 'pdf_files/DataEngineerFinal.pdf', 'modalDownloadplaquetteDataEngineer', 'message1DataEngineer', 'message2DataEngineer');
+handleDownload('btnValider3', 'formTelecharger3', 'emailField3', 'pdf_files/DataAnalystFinal.pdf', 'modalDownloadplaquetteDataAnalyst', 'message1DataAnalyst', 'message2DataAnalyst');
 
 </script>
 
