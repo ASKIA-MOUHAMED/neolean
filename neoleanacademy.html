@@ -33,25 +33,15 @@
         <link rel="stylesheet" type="text/css" href="neoleanacademy.css">
        
         <style>
+             @media(max-width: 992px){
+                .titreplaquette{
+                    font-size: 16px;
+                }
+            }
             .style1{
                 font-family: 'Montserrat SemiBold';
             }
-            /* .limites {
-    position: relative;
-    display: inline-block;
-    z-index:1;
-}
 
-.limites::after {
-    content: '';
-    position: absolute;
-    bottom: 2px; 
-    left: 0;
-    right: 0; 
-    padding-bottom: 10px; 
-    background-color: #1D4E9C;
-    z-index: 0;
-} */
         </style>
         
     </head>
@@ -429,7 +419,7 @@
     <div class="modal-content">
         <span class="close" onclick="closeModalPlaquetteIA()">&times;</span>
         <div class="row d-flex align-items-center py-3 px-2">
-            <h3 class="text-center pb-4">Plaquette Mastère Concepteur en Intelligence Artiificielle</h3>
+            <h3 class="text-center pb-4 titreplaquette">Plaquette Mastère Concepteur en Intelligence Artiificielle</h3>
             <div id="message1IA" class="mb-2" style="display:none; color:red;">Veuillez saisir une adresse e-mail valide.</div>
             <div id="message2IA" class="mb-2" style="display:none; color:red;">Veuillez remplir le champs adresse e-mail.</div>
             <form id="formTelecharger">
@@ -447,7 +437,7 @@
     <div class="modal-content">
         <span class="close" onclick="closeModalPlaquetteDataEngineer()">&times;</span>
         <div class="row d-flex align-items-center py-3 px-2">
-            <h3 class="text-center pb-4">Plaquette Mastère Data Engineer</h3>
+            <h3 class="text-center pb-4 titreplaquette">Plaquette Mastère Data Engineer</h3>
             <div id="message1DataEngineer" class="mb-2" style="display:none; color:red;">Veuillez saisir une adresse e-mail valide.</div>
             <div id="message2DataEngineer" class="mb-2" style="display:none; color:red;">Veuillez remplir le champs adresse e-mail.</div>
             <form id="formTelecharger2">
@@ -465,7 +455,7 @@
     <div class="modal-content">
         <span class="close" onclick="closeModalPlaquetteDataAnalyst()">&times;</span>
         <div class="row d-flex align-items-center py-3 px-2">
-            <h3 class="text-center pb-4">Plaquette Mastère Data Analyst</h3>
+            <h3 class="text-center pb-4 titreplaquette">Plaquette Mastère Data Analyst</h3>
             <div id="message1DataAnalyst" class="mb-2" style="display:none; color:red;">Veuillez saisir une adresse e-mail valide.</div>
             <div id="message2DataAnalyst" class="mb-2" style="display:none; color:red;">Veuillez remplir le champs adresse e-mail.</div>
             <form id="formTelecharger3">
@@ -580,10 +570,10 @@
             modal = document.getElementById("modalDownloadplaquetteIA");
            
         } else if (modalNumber === 2) {
-            closeModal(2);
+            closeModal2(2);
             modal = document.getElementById("modalDownloadplaquetteDataEngineer");
         } else if (modalNumber === 3) {
-            closeModal(3);
+            closeModal3(3);
             modal = document.getElementById("modalDownloadplaquetteDataAnalyst");
         }
         modal.style.display = "block";
