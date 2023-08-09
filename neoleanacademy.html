@@ -632,7 +632,7 @@
             if (response.ok) {
                 return response.blob();
             } else {
-                throw new Error('Erreur lors du téléchargement du fichier PDF');
+                throw new Error('Erreur lors du téléchargement du fichier PDF !');
             }
         })
         .then((blob) => {
