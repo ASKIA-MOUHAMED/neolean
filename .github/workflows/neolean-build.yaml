@@ -14,7 +14,7 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: ./
+  DEPLOYMENT_FOLDER: ./  # Le dossier de déploiement
 
 jobs:
   build-project:
@@ -26,17 +26,17 @@ jobs:
         with:
           submodules: 'recursive'
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.1' # Replace with the PHP version you want to use
-
-      - name: Install Composer
+      - name: Setup Apache and PHP
         run: |
-          curl -sS https://getcomposer.org/installer | php
-          mv composer.phar /usr/local/bin/composer
+          sudo apt-get update
+          sudo apt-get install apache2 php libapache2-mod-php
 
-      # Additional steps here for building your PHP project if needed
+      # Ici, vous pourriez ajouter d'autres étapes pour installer les dépendances de votre projet PHP
+
+      - name: Configure Apache for PHP
+        run: |
+          sudo cp /etc/apache2/mods-available/php7.4.load /etc/apache2/mods-enabled/
+          sudo service apache2 restart
 
       - name: Deploy with Deploy Now
         uses: ionos-deploy-now/artifact-action@v1
@@ -49,4 +49,3 @@ jobs:
           folder: ${{ env.DEPLOYMENT_FOLDER }}
           config-file: .deploy-now/neolean/config.yaml
           action: upload
-
