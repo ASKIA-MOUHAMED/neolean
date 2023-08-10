@@ -43,7 +43,6 @@ jobs:
           mv composer.phar /usr/local/bin/composer
       - name: Configure Apache for PHP
         run: |
-          sudo cp /etc/apache2/mods-available/php7.4.load /etc/apache2/mods-enabled/
           sudo service apache2 restart
 
       - name: Deploy with Deploy Now
