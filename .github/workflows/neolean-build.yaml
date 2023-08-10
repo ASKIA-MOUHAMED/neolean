@@ -32,7 +32,15 @@ jobs:
           sudo apt-get install apache2 php libapache2-mod-php
 
       # Ici, vous pourriez ajouter d'autres étapes pour installer les dépendances de votre projet PHP
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4' # Replace with the PHP version you want to use
 
+      - name: Install Composer
+        run: |
+          curl -sS https://getcomposer.org/installer | php
+          mv composer.phar /usr/local/bin/composer
       - name: Configure Apache for PHP
         run: |
           sudo cp /etc/apache2/mods-available/php7.4.load /etc/apache2/mods-enabled/
