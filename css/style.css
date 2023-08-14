@@ -38,6 +38,13 @@
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
 }
+.contact-icon{
+  font-size: 20px;
+}
+.contactstyle{
+  font-size: 15px;
+  color: #1D4E9C;
+}
 .btnneoleanacademy{
   color: white;
     background-color: #1D4E9C;
