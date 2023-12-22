@@ -146,7 +146,6 @@ strong {
   font-size: 1rem;
 }
 
-
 /*---------------------------------------
   CUSTOM ICON               
 -----------------------------------------*/
@@ -530,7 +529,11 @@ strong {
 -----------------------------------------*/
 .services {
   background: var(--section-bg-color);
+  border-radius: 50px;
+  
+ 
 }
+
 
 .nav-tabs {
   border-bottom: 0;
@@ -573,11 +576,42 @@ strong {
 /*---------------------------------------
   PROJECTS              
 -----------------------------------------*/
+.bas{
+  padding-top: 11px;
+  padding-bottom: 16px;
+}
+.texte1{
+  color: #1D4E9C;
+  font-size: 16px;
+}
+.ligne{
+  height: 1px;
+  background: #1A73E8;
+}
+.texte{
+  color: #000;
+  font-size: 14px;
+  
+}
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 70px 18px 70px;
+
+}
+.logo{
+  width: 146px;
+  height: 57px;
+  margin-bottom: 20px;
+}
 .projects-thumb {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   position: relative;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin: 10px;
+  box-shadow: -1px 7px 17.9px 8px rgba(0, 0, 0, 0.11);
+
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -586,17 +620,19 @@ strong {
   min-height: 356px;
 }
 
-.projects-thumb:hover {
-  background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+.projects-thumb:hover .logo{
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.2);
+  /* background: var(--white-color);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175); */
 }
 
 .projects-thumb:hover .projects-image {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 
 .projects-thumb:hover .projects-title-wrap {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .projects-thumb:hover .custom-btn,
@@ -605,7 +641,8 @@ strong {
 }
 
 .projects-title-wrap {
-  background: linear-gradient(to top,#f5f5f5, transparent 90%);
+  /* background: linear-gradient(to top,#f5f5f5, transparent 90%); */
+  background: linear-gradient(to top,#A9A9A9, transparent 90%);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -616,8 +653,9 @@ strong {
 
 .projects-small-title {
   color: var(--primary-color);
-  text-transform: uppercase;
-  font-size: 0.7rem;
+  text-transform: none;
+  font-size: 0.8rem;
+  line-height: -20px;
 }
 
 .projects-title {
@@ -626,10 +664,11 @@ strong {
 }
 
 .projects-image {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   width: 100%;
   height: auto;
   transition: all 0.3s;
+  border-bottom: 4px solid #F9C10B;
 }
 
 .projects-thumb-large .projects-image {
@@ -771,7 +810,10 @@ strong {
 .social-icon-link:hover {
   color: var(--primary-color);
 }
-
+.neoacademy{
+  font-family: var(--body-font-family); 
+  color: var(  --dark-color);
+}
 
 /*---------------------------------------
   RESPONSIVE STYLES               
